@@ -36,7 +36,7 @@ def index_links() -> rx.Component:
             const.TIKTOK 
             ),
         
-        title("Cátalogo De Materiales"),
+        title("Disenos"),
         link_button(
             "Catalago de Materiales",
             "Consulta los diferentes colores que puedes elegir",
