@@ -1,3 +1,5 @@
+cd Documents/Proyectos/Santiago
+python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
@@ -7,3 +9,4 @@ reflex export --frontend-only
 unzip frontend.zip -d public
 rm -f frontend.zip
 deactivate
+
