@@ -53,27 +53,27 @@ def index_links() -> rx.Component:
             False,
             Color.PRO.value
         ),
-        title("Cátalogo"),
+        title("DISEÑOS"),
         link_button(
-            "Maderas Personalisadas",
+            "Diseño 1",
             """Madera: Transformando Ideas en Realidad.""",
             "/icons/madera1.svg",
             const.MADERA_PERSONALIZADA
         ),
         link_button(
-            "Tablas de Picar",
+            "Diseño 2",
             """Tablas de Picar: Elegancia y Funcionalidad en Cada Corte.""",
             "/icons/madera2.svg",
             const.TABLA_PICAR
         ),
         link_button(
-            "Muebles Personalizados",
+            "Diseño 3",
             """Hecho para Ti: Muebles que Cuentan tu Historia.""",
             "/icons/madera3.svg",
             const.MUEBLES_PERSONLAZADOS
             ),
         link_button(
-            "Amoblado de Áreas Específicas",
+            "Diseño 4",
             """Amoblado a tu Medida, Espacios con Propósito.""",
             "/icons/madera4.svg",
             const.AMOBLADO_AREA
