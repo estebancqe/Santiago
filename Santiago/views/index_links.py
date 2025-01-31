@@ -13,41 +13,41 @@ def index_links() -> rx.Component:
         title("SOCIAL MEDIA"),
         link_button(
             "Facebook",
-            """Madera y Melamina: Donde la Creatividad Encuentra su Hogar.""",
+            """Clases de dibujo y mas.""",
             "/icons/facebook.svg",
             const.FACEBOOK
         ),
         link_button(
             "Instagram",
-            """Diseño en Madera: Crea Tu Espacio Perfecto con Nosotros.""",
+            """Diseño y Arte""",
             "/icons/instagram.svg",
             const.INSTAGRAM
             ),
         link_button(
             "Youtube",
-            """Estilo Personalizado, Calidad Artesanal: Nuestro Compromiso.""",
+            """Clases y tutoriales.""",
             "/icons/youtube.svg",
             const.YOUTUBE
             ),
         link_button(
             "Tik-Tok",
-            """Tu Visión, Nuestra Creación: Experiencia en Madera y Melamina.""",
+            """Videos cortos y divertidos.""",
             "/icons/linkedin.svg",
             const.TIKTOK 
             ),
         
-        title("Disenos"),
+        title("Diseño"),
         link_button(
-            "Catalago de Materiales",
-            "Consulta los diferentes colores que puedes elegir",
+            "Mi Arte",
+            "Dibujos y Pinturas",
             "/icons/book-solid.svg",
             Route.COURSES.value,
             False,
             Color.PURPLE.value
         ),
         link_button(
-            "Cotizacion",
-            "cotizacion tu Productos",
+            "Tutoriales",
+            "aprende a Dibujar y Pintar",
             "/icons/book-solid.svg",
             Route.COTIZAR.value,
             False,
@@ -56,25 +56,25 @@ def index_links() -> rx.Component:
         title("DISEÑOS"),
         link_button(
             "Diseño 1",
-            """Madera: Transformando Ideas en Realidad.""",
+            """Descripcion 1.""",
             "/icons/madera1.svg",
             const.MADERA_PERSONALIZADA
         ),
         link_button(
             "Diseño 2",
-            """Tablas de Picar: Elegancia y Funcionalidad en Cada Corte.""",
+            """Descripcion 2""",
             "/icons/madera2.svg",
             const.TABLA_PICAR
         ),
         link_button(
             "Diseño 3",
-            """Hecho para Ti: Muebles que Cuentan tu Historia.""",
+            """Descripcion 3""",
             "/icons/madera3.svg",
             const.MUEBLES_PERSONLAZADOS
             ),
         link_button(
             "Diseño 4",
-            """Amoblado a tu Medida, Espacios con Propósito.""",
+            """Descripcion 4""",
             "/icons/madera4.svg",
             const.AMOBLADO_AREA
             ),

@@ -1,4 +1,4 @@
-#!/home/runner/work/Santiago/Santiago/.venv/bin/python
+#!/Users/estebanq/Documents/Proyectos/Santiago/.venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys

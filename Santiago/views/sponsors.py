@@ -19,10 +19,10 @@ def sponsors() -> rx.Component:
                 const.UBI_IBARRA
             ),
                 link_button(
-                "Latacunga",
-                "Urb. Estrella de la Mañana",
+                "Guayaquil",
+                "la direccion que quieras poner",
                 "/icons/location.svg",
-                const.UBI_LATA
+                const.UBI_IBARRA
             ),
         ),
     

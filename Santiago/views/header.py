@@ -83,7 +83,7 @@ def header(details=True) -> rx.Component:
                 ),
                 rx.text(
                     f"""
-                    Bienvenido a nuestro sitio especializado en trabajos en madera y melamina. Desde muebles a medida hasta soluciones de almacenamiento, fusionamos la tradición con la innovación para crear piezas únicas que realzan cualquier espacio. ¡Explore nuestro portafolio y dé vida a sus proyectos con nosotros!""",
+                    Descripcion de tu trabajo y todo lo que quieras como introduccion !""",
                     font_size=Size.DEFAULT.value,
                     color=TextColor.BODY.value
                 ),

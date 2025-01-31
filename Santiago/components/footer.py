@@ -38,7 +38,7 @@ def footer() -> rx.Component:
                 #     alt="Avatar"
                 # ),
                 rx.text(
-                    "Innovación en Diseño: Inspirando Espacios, Creando Historias para ti.",
+                    "Innovación en Diseño: Creando Historias para ti.",
                     font_size=Size.MEDIUM.value,
                     margin_top=Size.ZERO.value
                 ),
