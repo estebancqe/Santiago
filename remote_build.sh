@@ -1,6 +1,6 @@
 cd Documents/Proyectos/Santiago
-python -m venv .venv
-source .venv/bin/activate
+python -m venv .venvsantiago
+source .venvsantiago/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 rm -rf public
