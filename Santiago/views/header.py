@@ -67,11 +67,12 @@ def header(details=True) -> rx.Component:
                 width="100%",
             ),
             align="center",
-            spacing=Spacing.VERY_BIG.value
+            spacing=Spacing.VERY_BIG.value,
+            flex_direction=["column", "row"],
         ),
         rx.image(
             src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes%20de%20los%20modelos%20que%20hemos%20hecho/mueble_sala_seteada.JPG",
-            width="600 px",
+            width="100%",
             height="auto"),
 
         width="100%",
