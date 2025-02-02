@@ -11,11 +11,12 @@ from Santiago.components.link_button import link_button
 
 def header(details=True) -> rx.Component:
     return rx.vstack(
+        
         rx.hstack(
             
             rx.avatar(
                     name="Santiago Q",
-                    size=Spacing.MEDIUM_BIG.value,
+                    size=Spacing.VERY_BIG.value,
                     src="/creyenteLogo.jpg",
                     radius="full",
                     color=TextColor.BODY.value,
@@ -23,17 +24,21 @@ def header(details=True) -> rx.Component:
                     padding="2px",
                     border=f"4px solid {Color.PRIMARY.value}"
                 ),
-            rx.vstack(
-                rx.heading(
-                    "SANTIAGO QUIÑA",
-                    size=Spacing.BIG.value
+            rx.hstack(
+                rx.vstack(
+                    rx.heading(
+                        "CREYENTES",
+                        size=Spacing.BIG.value
+                    ),
+                    rx.text(
+                        "Diseño de muebles y mas",
+                        margin_top=Size.ZERO.value,
+                        color=Color.PRIMARY.value
+                    ),
                 ),
-                rx.text(
-                    "Diseño cursos y mas",
-                    margin_top=Size.ZERO.value,
-                    color=Color.PRIMARY.value
-                ),
+                
                 rx.hstack(
+                    
                     link_icon(
                         "/icons/instagram.svg",
                         const.INSTAGRAM,
@@ -57,44 +62,21 @@ def header(details=True) -> rx.Component:
                     spacing=Spacing.LARGE.value,
                     padding_top=Size.SMALL.value,
                 ),
-                spacing=Spacing.ZERO.value,
-                align_items="start",
+                spacing=Spacing.VERY_BIG.value,#fila del avatar
+                align_items="center",
+                width="100%",
             ),
-            align="end",
-            spacing=Spacing.DEFAULT.value,
-        ),      
-        rx.cond(  
-            details,
-            rx.vstack(
-                rx.flex(
-                    info_text(
-                        f"{experience()}+",
-                        "años de experiencia"
-                    ),
-                    rx.spacer(),#crea un espacio ficticio entre texto
-                    info_text(
-                        "ateción","al detalle"
-                    ),
-                    rx.spacer(), 
-                    info_text(
-                        "trabajo","certificado"
-                    ),
-                    width="100%",
-                ),
-                rx.text(
-                    f"""
-                    Descripcion de tu trabajo y todo lo que quieras como introduccion !""",
-                    font_size=Size.DEFAULT.value,
-                    color=TextColor.BODY.value
-                ),
-                width="100%",  
-                spacing=Spacing.BIG.value,
-                
-            )            
-        ),  
+            align="center",
+            spacing=Spacing.VERY_BIG.value
+        ),
+        rx.image(
+            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes%20de%20los%20modelos%20que%20hemos%20hecho/mueble_sala_seteada.JPG",
+            width="600 px",
+            height="auto"),
+
         width="100%",
         spacing=Spacing.BIG.value,                     #espacion entre las 2 secciones
-        align_items="start", #alinear todo al inicio
+        align_items="center", #alinear todo al inicio
         # on_mount=PageState.check_live
         
     )

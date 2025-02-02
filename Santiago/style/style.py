@@ -4,7 +4,7 @@ from .colors import Color, TextColor
 from .fonts import Font, FontWeight
 
 # Constants
-MAX_WIDTH = "600px"
+MAX_WIDTH = "1200px"
 FADEIN_ANIMATION = "animate__animated animate__fadeIn"
 BOUNCEIN_ANIMATION = "animate__animated animate__bounceIn"
 

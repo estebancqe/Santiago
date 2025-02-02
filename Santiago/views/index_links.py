@@ -35,7 +35,11 @@ def index_links() -> rx.Component:
             "/icons/linkedin.svg",
             const.TIKTOK 
             ),
-        
+        rx.box(
+            rx.hstack(
+                
+            ),
+        ),
         title("Diseño"),
         link_button(
             "Mi Arte",
@@ -53,6 +57,7 @@ def index_links() -> rx.Component:
             False,
             Color.PRO.value
         ),
+
         title("DISEÑOS"),
         link_button(
             "Diseño 1",
