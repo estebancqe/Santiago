@@ -6,19 +6,31 @@ from Santiago.style.style import Color
 
 
 def navbar() -> rx.Component:
-    return rx.hstack(
-        rx.link(
-            rx.box(
-                rx.text("Santiago", as_="span", color=Color.PRIMARY.value),
-                rx.text("Desing", as_="span", color=Color.SECONDARY.value),
-                style=styles.navbar_title_style
-            ),
-            href=Route.INDEX.value
+    return rx.flex(
+        # Navegación izquierda
+        rx.hstack(
+            rx.link("Inicio", href=Route.INDEX.value),
+            rx.link("Historia", href=Route.HISTORIA.value),
+            rx.link("Misión", href=Route.MISION.value),
+            rx.link("Trabajos", href=Route.TRABAJOS.value),
+            spacing="4",
+            style=styles.navbar_title_style,
         ),
+        # Logo/Título centrado
+        rx.hstack(
+            rx.text("Santiago", as_="span", color=Color.PRIMARY.value),
+            rx.text("Design", as_="span", color=Color.SECONDARY.value),
+            spacing="1",
+            style=styles.navbar_title_style,
+        ),
+        flex_direction=["column", "row"],
+        width="100%",
         position="sticky",
         bg=Color.CONTENT.value,
         padding_x=Size.BIG.value,
         padding_y=Size.DEFAULT.value,
         z_index="999",
-        top="0"
+        top="0",
+        justify="between",
+        align="center",
     )

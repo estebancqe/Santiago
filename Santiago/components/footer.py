@@ -51,6 +51,7 @@ def footer() -> rx.Component:
         #    icon=rx.image(src="/AvatarC.png"),
         #    href=const.CATALOGO
         # ),
+        width="100%",
         align="center",
         margin_bottom=Size.BIG.value,
         padding_bottom=Size.VERY_BIG.value,

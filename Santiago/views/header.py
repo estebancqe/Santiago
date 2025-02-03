@@ -33,7 +33,8 @@ def header(details=True) -> rx.Component:
                     rx.text(
                         "Diseño de muebles y mas",
                         margin_top=Size.ZERO.value,
-                        color=Color.PRIMARY.value
+                        color=Color.PRIMARY.value,
+                        size=Spacing.BIG.value,
                     ),
                 ),
                 
@@ -65,7 +66,9 @@ def header(details=True) -> rx.Component:
                 spacing=Spacing.VERY_BIG.value,#fila del avatar
                 align_items="center",
                 width="100%",
+                flex_direction=["column", "row"],
             ),
+            
             align="center",
             spacing=Spacing.VERY_BIG.value,
             flex_direction=["column", "row"],

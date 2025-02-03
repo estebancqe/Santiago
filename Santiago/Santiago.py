@@ -4,6 +4,9 @@ import Santiago.style.style as styles
 from Santiago.pages.index import index
 from Santiago.pages.courses import courses
 from Santiago.pages.cotizar import cotizar
+from Santiago.pages.historia import historia
+from Santiago.pages.mision import mision
+from Santiago.pages.trabajos import trabajos
 # from Esteban.api.api import repo, live, featured,api_Muebles,api_Modelos
 
 app = rx.App(
