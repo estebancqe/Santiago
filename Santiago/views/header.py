@@ -71,6 +71,14 @@ def header(details=True) -> rx.Component:
             width="100%",
             height="auto"
         ),
+        rx.image(
+            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes%20de%20los%20modelos%20que%20hemos%20hecho/cogador_horizontal_seteada.JPG",
+            height="auto"
+        ),
+        rx.image(
+            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes%20de%20los%20modelos%20que%20hemos%20hecho/mueble_cafetera_horizontal_seteada.JPG",
+            height="auto"
+        ),
         
         spacing=Spacing.BIG.value,
         width="100%",
