@@ -4,42 +4,63 @@ from Santiago.components.newsletter import newsletter
 from Santiago.routes import Route
 from Santiago.components.link_button import link_button
 from Santiago.components.title import title
-from Santiago.style.style import Color, Spacing
+from Santiago.style.style import Color, Spacing,Size
 # from Esteban.state.PageState import PageState
 
 
 def index_links() -> rx.Component:
     return rx.vstack(
         title("SOCIAL MEDIA"),
-        link_button(
+        rx.grid(
+            link_button(
             "Facebook",
             """Clases de dibujo y mas.""",
             "/icons/facebook.svg",
             const.FACEBOOK
+            ),
+            link_button(
+                "Instagram",
+                """Diseño y Arte""",
+                "/icons/instagram.svg",
+                const.INSTAGRAM
+                ),
+            link_button(
+                "Youtube",
+                """Clases y tutoriales.""",
+                "/icons/youtube.svg",
+                const.YOUTUBE
+                ),
+            link_button(
+                "Tik-Tok",
+                """Videos cortos y divertidos.""",
+                "/icons/linkedin.svg",
+                const.TIKTOK 
+                ),
+            columns="2",
+            spacing="4",  # Esto agrega espacio entre las imágenes
+            width="100%"
         ),
-        link_button(
-            "Instagram",
-            """Diseño y Arte""",
-            "/icons/instagram.svg",
-            const.INSTAGRAM
+        title("MODELOS"),
+        rx.grid(
+            rx.text(
+                "Modelos de Muebles",
+                size="8",
             ),
-        link_button(
-            "Youtube",
-            """Clases y tutoriales.""",
-            "/icons/youtube.svg",
-            const.YOUTUBE
+            rx.link(
+                rx.image(
+                src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes%20de%20los%20modelos%20que%20hemos%20hecho/colgador_de_ropa_mami.jpeg",
+                width="80%",
+                href=Route.TRABAJOS.value,
+                ),
+                href=Route.TRABAJOS.value,
             ),
-        link_button(
-            "Tik-Tok",
-            """Videos cortos y divertidos.""",
-            "/icons/linkedin.svg",
-            const.TIKTOK 
-            ),
-        rx.box(
-            rx.hstack(
-                
-            ),
+            columns="2",
+            spacing=Spacing.VERY_BIG.value,
+            align="center",
+            justify="end",
+            # SizedBox=Spacing.DEFAULT.value,
         ),
+        
         title("Diseño"),
         link_button(
             "Mi Arte",
