@@ -53,12 +53,12 @@ BASE_STYLE = {
         "font_weight": FontWeight.MEDIUM.value
     },
     rx.button: {
-        "width": "100%",
-        "height": "100%",
+        # "width": "100%",
+        "height": ["100%","auto"],
         "padding": Size.SMALL.value,
         "border_radius": Size.DEFAULT.value,
         "color": TextColor.HEADER.value,
-        "background_color": Color.CONTENT.value,
+        "background_color": "#D2B48C",#cambio color de fondo del botton
         "white_space": "normal",
         "text_align": "start",
         "--cursor-button": "pointer",
@@ -82,7 +82,7 @@ navbar_title_style = dict(
 title_style = dict(
     width="100%",
     padding_top=Size.DEFAULT.value,
-    font_size=Size.LARGE.value
+    font_size=Size.BIG.value,
 )
 
 button_title_style = dict(
@@ -99,5 +99,9 @@ button_mela_title_style = dict(
 
 button_body_style = dict(
     font_weight=FontWeight.LIGHT.value,
-    color=TextColor.BODY.value
+    color=Color.BACKGROUND.value
 )
+style_prueba = {
+    "text_decoration": "underline",
+    "background_color":"#f7f2eb"
+}

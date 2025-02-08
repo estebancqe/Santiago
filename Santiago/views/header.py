@@ -12,53 +12,62 @@ from Santiago.components.link_button import link_button
 def header(details=True) -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(
-                name="Logo creyente",
-                size=Spacing.VERY_BIG.value,
-                src="/creyenteLogo.jpg",
+            rx.image(
+                src="/CREYENTE.png",
+                width="300px",
+                # height="auto",
                 radius="full",
-                color=TextColor.BODY.value,
-                bg=Color.CONTENT.value,
                 padding="2px",
-                border=f"4px solid {Color.PRIMARY.value}",
                 aling="start",
             ),
+            # rx.avatar(
+            #     name="Logo creyente",
+            #     size="9",
+            #     src="/logo_creyente_mami.jpeg",
+            #     radius="full",
+            #     color=Color.PRO.value,
+            #     # bg=Color.prueba.value,
+            #     padding="2px",
+            #     # border=f"4px solid {Color.prueba.value}",
+            #     aling="start",
+            # ),
             rx.vstack(
                 rx.heading(
                     "CREYENTES",
-                    size=Spacing.VERY_BIG.value
+                    size=Spacing.VERY_BIG.value,
+                    color=Color.CONTENT.value,
                 ),
                 rx.text(
                     "Diseño de muebles y mas",
                     margin_top=Size.ZERO.value,
-                    color=Color.PRIMARY.value,
+                    color=Color.prueba.value,
                     size=Spacing.BIG.value,
                 ),
             ),
-            rx.hstack(
-                link_icon(
-                    "/icons/instagram.svg",
-                    const.INSTAGRAM,
-                    "email@email.com"
-                ),
-                link_icon(
-                    "/icons/facebook.svg",
-                    const.FACEBOOK,
-                    "facebook"
-                ),
-                link_icon(
-                    "/icons/book-solid.svg",
-                    const.CATALOGO,
-                    "catalogo"
-                ),
-                link_icon(
-                    "/icons/whatsapp.svg",
-                    const.WHATSAPP,
-                    "whatssap"
-                ),
-                spacing=Spacing.BIG.value,
+            # rx.hstack(
+            #     link_icon(
+            #         "/icons/instagram.svg",
+            #         const.INSTAGRAM,
+            #         "email@email.com"
+            #     ),
+            #     link_icon(
+            #         "/icons/facebook.svg",
+            #         const.FACEBOOK,
+            #         "facebook"
+            #     ),
+            #     link_icon(
+            #         "/icons/book-solid.svg",
+            #         const.CATALOGO,
+            #         "catalogo"
+            #     ),
+            #     link_icon(
+            #         "/icons/whatsapp.svg",
+            #         const.WHATSAPP,
+            #         "whatssap"
+            #     ),
+            #     spacing=Spacing.BIG.value,
                 
-            ),
+            # ),
 
             flex_direction=["column", "row"],
             align="center",
@@ -67,16 +76,7 @@ def header(details=True) -> rx.Component:
             width="100%",
         ),
         rx.image(
-            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes%20de%20los%20modelos%20que%20hemos%20hecho/mueble_sala_seteada.JPG",
-            width="100%",
-            height="auto"
-        ),
-        rx.image(
-            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes%20de%20los%20modelos%20que%20hemos%20hecho/cogador_horizontal_seteada.JPG",
-            height="auto"
-        ),
-        rx.image(
-            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes%20de%20los%20modelos%20que%20hemos%20hecho/mueble_cafetera_horizontal_seteada.JPG",
+            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes_pagina_web/cogador_horizontal.JPG",
             height="auto"
         ),
         

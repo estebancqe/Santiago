@@ -9,17 +9,17 @@ def navbar() -> rx.Component:
     return rx.flex(
         # Navegación izquierda
         rx.hstack(
-            rx.link("Inicio", href=Route.INDEX.value),
-            rx.link("Historia", href=Route.HISTORIA.value),
-            rx.link("Misión", href=Route.MISION.value),
-            rx.link("Trabajos", href=Route.TRABAJOS.value),
+            rx.link("Inicio", href=Route.INDEX.value,color=Color.BACKGROUND.value),
+            rx.link("Historia", href=Route.HISTORIA.value, color=Color.BACKGROUND.value),
+            rx.link("Misión", href=Route.MISION.value,color=Color.BACKGROUND.value),
+            rx.link("Trabajos", href=Route.TRABAJOS.value,color=Color.BACKGROUND.value),
             spacing="4",
             style=styles.navbar_title_style,
         ),
         # Logo/Título centrado
         rx.hstack(
-            rx.text("Santiago", as_="span", color=Color.PRIMARY.value),
-            rx.text("Design", as_="span", color=Color.SECONDARY.value),
+            rx.text("Crey", as_="span", color=Color.BACKGROUND.value),
+            rx.text("ente", as_="span", color=Color.BACKGROUND.value),
             spacing="1",
             style=styles.navbar_title_style,
         ),

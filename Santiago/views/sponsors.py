@@ -25,6 +25,8 @@ def sponsors() -> rx.Component:
                 const.UBI_IBARRA
             ),
             width="100%",
+            align="center",
+            justify="center",
         ),
         width="100%",
         
