@@ -33,7 +33,7 @@ def header(details=True) -> rx.Component:
             # ),
             rx.vstack(
                 rx.heading(
-                    "CREYENTES",
+                    "CREYENTE",
                     size=Spacing.VERY_BIG.value,
                     color=Color.CONTENT.value,
                 ),
