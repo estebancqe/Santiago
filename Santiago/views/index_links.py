@@ -64,7 +64,7 @@ def index_links() -> rx.Component:
             ),
             rx.link(
                 rx.image(
-                src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes%20de%20los%20modelos%20que%20hemos%20hecho/colgador_de_ropa_mami.jpeg",
+                src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/colgador_de_ropa_mami.jpeg",
                 width="100%",
                 href=Route.TRABAJOS.value,
                 ),
@@ -88,39 +88,39 @@ def index_links() -> rx.Component:
             rx.grid(
                 rx.link(
                     rx.image(
-                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes_pagina_web/cafetera_vertical_cerrado%20copy.JPG",
-                        height="500px",
+                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_cocina_electrodomesticos_copy.JPG",
+                        height="auto",
                         object_fit="cover",
                         width="auto",
                     ),
-                    href=Route.TRABAJOS.value,
+                    href="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_cocina_electrodomesticos.JPG",
                 ),
                 rx.link(
                     rx.image(
-                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes_pagina_web/mueble_cocina_electrodomesticos%20copy%20(1).JPG",
-                        height="500px",
+                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_armario%20copy.JPG",
+                        height="auto",
                         object_fit="cover",
                         width="auto",
                     ),
-                    href=Route.TRABAJOS.value,
+                    href="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_armario.JPG",
                 ),
                 rx.link(
                     rx.image(
-                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes_pagina_web/mueble_armario%20copy.JPG",
-                        height="500px",
+                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/cafetera_vertical_cerrado%20copy.JPG",
+                        height="auto",
                         object_fit="cover",
                         width="auto",
                     ),
-                    href=Route.TRABAJOS.value,
+                    href="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/cafetera_vertical_cerrado.JPG",
                 ),
                 rx.link(
                     rx.image(
-                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes_pagina_web/mueble_sala_vertical%20copy.JPG",
-                        height="500px",
+                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_sala_vertical%20copy.JPG",
+                        height="auto",
                         object_fit="cover",
                         width="auto",
                     ),
-                    href=Route.TRABAJOS.value,
+                    href="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_sala_vertical.JPG",
                 ),
                 gap="1rem",
                 grid_template_columns=[

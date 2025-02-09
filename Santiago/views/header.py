@@ -76,7 +76,7 @@ def header(details=True) -> rx.Component:
             width="100%",
         ),
         rx.image(
-            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/imagenes_pagina_web/cogador_horizontal.JPG",
+            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/cogador_horizontal.JPG",
             height="auto"
         ),
         

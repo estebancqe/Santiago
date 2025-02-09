@@ -8,13 +8,23 @@ from Santiago.style.style import Color
 def navbar() -> rx.Component:
     return rx.flex(
         # Navegación izquierda
-        rx.hstack(
-            rx.link("Inicio", href=Route.INDEX.value,color=Color.BACKGROUND.value),
-            rx.link("Historia", href=Route.HISTORIA.value, color=Color.BACKGROUND.value),
-            rx.link("Misión", href=Route.MISION.value,color=Color.BACKGROUND.value),
-            rx.link("Trabajos", href=Route.TRABAJOS.value,color=Color.BACKGROUND.value),
+        rx.flex(
+            rx.hstack(
+                rx.link("Inicio", href=Route.INDEX.value,color=Color.BACKGROUND.value),
+                rx.link("Historia", href=Route.HISTORIA.value, color=Color.BACKGROUND.value),
+            ),
+            rx.hstack(
+                rx.link("Misión", href=Route.MISION.value,color=Color.BACKGROUND.value),
+                rx.link("Trabajos", href=Route.TRABAJOS.value,color=Color.BACKGROUND.value),
+            ),
+            # rx.link("Inicio", href=Route.INDEX.value,color=Color.BACKGROUND.value),
+            # rx.link("Historia", href=Route.HISTORIA.value, color=Color.BACKGROUND.value),
+            # rx.link("Misión", href=Route.MISION.value,color=Color.BACKGROUND.value),
+            # rx.link("Trabajos", href=Route.TRABAJOS.value,color=Color.BACKGROUND.value),
             spacing="4",
             style=styles.navbar_title_style,
+            flex_direction=["column", "row"],
+            
         ),
         # Logo/Título centrado
         rx.hstack(
