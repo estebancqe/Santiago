@@ -1,8 +1,8 @@
 import reflex as rx
 import Santiago.style.style as styles
 from Santiago.routes import Route
-from Santiago.style.style import Size
-from Santiago.style.style import Color
+from Santiago.style.style import Size, Color, TextColor
+from Santiago.components.link_navbar import link_navbar
 
 
 def navbar() -> rx.Component:
@@ -10,37 +10,51 @@ def navbar() -> rx.Component:
         # Navegación izquierda
         rx.flex(
             rx.hstack(
-                rx.link("Inicio", href=Route.INDEX.value,color=Color.BACKGROUND.value),
-                rx.link("Historia", href=Route.HISTORIA.value, color=Color.BACKGROUND.value),
+                link_navbar(
+                    "Inicio",
+                    Route.INDEX.value,
+                    "palabra inicio",
+                ),
+                link_navbar(
+                    "Historia",
+                    Route.HISTORIA.value,
+                    "palabra historia"
+                ),
             ),
             rx.hstack(
-                rx.link("Misión", href=Route.MISION.value,color=Color.BACKGROUND.value),
-                rx.link("Trabajos", href=Route.TRABAJOS.value,color=Color.BACKGROUND.value),
+                link_navbar(
+                    "Misión",
+                    Route.MISION.value,
+                    "palabra mision",
+                ),
+                    
+                link_navbar(
+                    "Trabajos",
+                    Route.TRABAJOS.value,
+                    "palabra trabajos",
+                ),
             ),
-            # rx.link("Inicio", href=Route.INDEX.value,color=Color.BACKGROUND.value),
-            # rx.link("Historia", href=Route.HISTORIA.value, color=Color.BACKGROUND.value),
-            # rx.link("Misión", href=Route.MISION.value,color=Color.BACKGROUND.value),
-            # rx.link("Trabajos", href=Route.TRABAJOS.value,color=Color.BACKGROUND.value),
             spacing="4",
+            color=Color.BACKGROUND.value,
             style=styles.navbar_title_style,
             flex_direction=["column", "row"],
             
         ),
         # Logo/Título centrado
         rx.hstack(
-            rx.text("Crey", as_="span", color=Color.BACKGROUND.value),
-            rx.text("ente", as_="span", color=Color.BACKGROUND.value),
+            rx.text("Crey", as_="span", color=TextColor.HEADER.value),
+            rx.text("ente", as_="span", color=TextColor.HEADER.value),
             spacing="1",
-            style=styles.navbar_title_style,
+            style=styles.navbar_title_style,        
         ),
-        flex_direction=["column", "row"],
-        width="100%",
-        position="sticky",
+        spacing="3",
+        width=["100%", "auto"],
+        position="sticky", #PARA QUE SE QUEDE ESTATICO 
         bg=Color.CONTENT.value,
         padding_x=Size.BIG.value,
         padding_y=Size.DEFAULT.value,
-        z_index="999",
+        z_index="999", #QUE TENGA SIMPRE EL 100 PORCIENTO DE LA PANTALLA
         top="0",
-        justify="between",
-        align="center",
+        justify="between",# FOMRACION HOROZONTAL DE LOS COMPONENTES
+        align="center", #ALINEACION VERTICAL
     )

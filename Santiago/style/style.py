@@ -23,6 +23,7 @@ class Size(Enum):
     SMALL = "0.5em"
     MEDIUM = "0.8em"
     DEFAULT = "1em"
+    MEDIUM_LARGE= "1.2em" #uso para la pabra de navbar
     LARGE = "1.5em"
     BIG = "2em"
     MEDIUM_BIG = "2.8em"
@@ -76,7 +77,7 @@ BASE_STYLE = {
 navbar_title_style = dict(
     font_family=Font.LOGO.value,
     font_weight=FontWeight.MEDIUM.value,
-    font_size=Size.LARGE.value
+    font_size=Size.MEDIUM_LARGE.value,
 )
 
 title_style = dict(
@@ -101,7 +102,7 @@ button_body_style = dict(
     font_weight=FontWeight.LIGHT.value,
     color=Color.BACKGROUND.value
 )
-style_prueba = {
+style_secod_tittle = {
     "text_decoration": "underline",
     "background_color":"#f7f2eb"
 }

@@ -1,6 +1,6 @@
 import reflex as rx
 import Santiago.constants as const
-from Santiago.components.newsletter import newsletter 
+from Santiago.components.link_image_muestra import link_image_muestra
 from Santiago.routes import Route
 from Santiago.components.link_button import link_button
 from Santiago.components.title import title
@@ -58,9 +58,9 @@ def index_links() -> rx.Component:
         rx.flex(
             rx.text(
                 "CONOCE NUESTROS MODELOS",
-                size="7",
-                color="#ccb089",
-                style=styles.style_prueba,
+                size=Spacing.MEDIUM_BIG.value,
+                color=Color.SECOND_TITTLE.value,
+                style=styles.style_secod_tittle,
             ),
             rx.link(
                 rx.image(
@@ -78,106 +78,37 @@ def index_links() -> rx.Component:
             justify="between"
         ),
         
-        rx.heading(
-            "Crea lo que Siempre has Soñado",
-            size="8",
-            color="#ccb089",
-        ),
+        title("Crea lo que Siempre has Soñado"),
 
         rx.flex(
             rx.grid(
-                rx.link(
-                    rx.image(
-                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_cocina_electrodomesticos_copy.JPG",
-                        height="auto",
-                        object_fit="cover",
-                        width="auto",
-                    ),
-                    href="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_cocina_electrodomesticos.JPG",
+                link_image_muestra(
+                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_cocina_electrodomesticos_copy.JPG",
+                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_cocina_electrodomesticos.JPG",
                 ),
-                rx.link(
-                    rx.image(
-                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_armario%20copy.JPG",
-                        height="auto",
-                        object_fit="cover",
-                        width="auto",
-                    ),
-                    href="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_armario.JPG",
+                link_image_muestra(
+                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_armario%20copy.JPG",
+                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_armario.JPG",
                 ),
-                rx.link(
-                    rx.image(
-                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/cafetera_vertical_cerrado%20copy.JPG",
-                        height="auto",
-                        object_fit="cover",
-                        width="auto",
-                    ),
-                    href="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/cafetera_vertical_cerrado.JPG",
+                link_image_muestra(
+                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/cafetera_vertical_cerrado%20copy.JPG",
+                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/cafetera_vertical_cerrado.JPG",
                 ),
-                rx.link(
-                    rx.image(
-                        src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_sala_vertical%20copy.JPG",
-                        height="auto",
-                        object_fit="cover",
-                        width="auto",
-                    ),
-                    href="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_sala_vertical.JPG",
+                link_image_muestra(
+                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_sala_vertical%20copy.JPG",
+                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_sala_vertical.JPG",
                 ),
                 gap="1rem",
                 grid_template_columns=[
                     "1fr",  # móvil: 1 columna
                     "repeat(2, 1fr)",  # tablet/desktop: 2 columnas
                 ],
-                # width="100%",
                 align="center",
                 justify="end",   
             ),
             width="100%",
+            spacing="2",
         ),
-
-        # title("CURSOS"),
-
-        # link_button(
-        #     "Mi Arte",
-        #     "Dibujos y Pinturas",
-        #     "/icons/book-solid.svg",
-        #     Route.COURSES.value,
-        #     False,
-        #     Color.PURPLE.value
-        # ),
-        # link_button(
-        #     "Tutoriales",
-        #     "aprende a Dibujar y Pintar",
-        #     "/icons/book-solid.svg",
-        #     Route.COTIZAR.value,
-        #     False,
-        #     Color.PRO.value
-        # ),
-
-        # title("DISEÑOS"),
-        # link_button(
-        #     "Diseño 1",
-        #     """Descripcion 1.""",
-        #     "/icons/madera1.svg",
-        #     const.MADERA_PERSONALIZADA
-        # ),
-        # link_button(
-        #     "Diseño 2",
-        #     """Descripcion 2""",
-        #     "/icons/madera2.svg",
-        #     const.TABLA_PICAR
-        # ),
-        # link_button(
-        #     "Diseño 3",
-        #     """Descripcion 3""",
-        #     "/icons/madera3.svg",
-        #     const.MUEBLES_PERSONLAZADOS
-        #     ),
-        # link_button(
-        #     "Diseño 4",
-        #     """Descripcion 4""",
-        #     "/icons/madera4.svg",
-        #     const.AMOBLADO_AREA
-        #     ),
         
         title("Contacto"),
         rx.vstack(

@@ -15,22 +15,8 @@ def header(details=True) -> rx.Component:
             rx.image(
                 src="/CREYENTE.png",
                 width="300px",
-                # height="auto",
-                radius="full",
-                padding="2px",
-                aling="start",
+                aling="center",
             ),
-            # rx.avatar(
-            #     name="Logo creyente",
-            #     size="9",
-            #     src="/logo_creyente_mami.jpeg",
-            #     radius="full",
-            #     color=Color.PRO.value,
-            #     # bg=Color.prueba.value,
-            #     padding="2px",
-            #     # border=f"4px solid {Color.prueba.value}",
-            #     aling="start",
-            # ),
             rx.vstack(
                 rx.heading(
                     "CREYENTE",
@@ -40,7 +26,7 @@ def header(details=True) -> rx.Component:
                 rx.text(
                     "Diseño de muebles y mas",
                     margin_top=Size.ZERO.value,
-                    color=Color.prueba.value,
+                    color=Color.BLACK.value,
                     size=Spacing.BIG.value,
                 ),
             ),
@@ -73,7 +59,7 @@ def header(details=True) -> rx.Component:
             align="center",
             justify="center",
             spacing=Spacing.VERY_BIG.value,
-            width="100%",
+            width=["100%","auto"],
         ),
         rx.image(
             src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/cogador_horizontal.JPG",
@@ -81,7 +67,7 @@ def header(details=True) -> rx.Component:
         ),
         
         spacing=Spacing.BIG.value,
-        width="100%",
+        width=["100%","auto"],
     ),
     
 def experience() -> int:
