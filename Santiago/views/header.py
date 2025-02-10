@@ -57,9 +57,9 @@ def header(details=True) -> rx.Component:
 
             flex_direction=["column", "row"],
             align="center",
-            justify="center",
+            justify="between",
             spacing=Spacing.VERY_BIG.value,
-            width=["100%","auto"],
+            width="100%",
         ),
         rx.image(
             src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/cogador_horizontal.JPG",
