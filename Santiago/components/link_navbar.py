@@ -11,5 +11,4 @@ def link_navbar(title:str,url: str, alt: str) -> rx.Component:
         width=["100%", "auto"],
         style=styles.navbar_title_style,
         href=url,
-        is_external=True
     )

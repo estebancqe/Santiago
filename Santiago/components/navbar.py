@@ -42,10 +42,13 @@ def navbar() -> rx.Component:
         ),
         # Logo/Título centrado
         rx.hstack(
-            rx.text("Crey", as_="span", color=TextColor.HEADER.value),
-            rx.text("ente", as_="span", color=TextColor.HEADER.value),
-            spacing="1",
-            style=styles.navbar_title_style,        
+            rx.link(
+                rx.text("Crey", as_="span", color=TextColor.HEADER.value),
+                rx.text("ente", as_="span", color=TextColor.HEADER.value),
+                spacing="1",
+                style=styles.navbar_title_style,
+                href=Route.INDEX.value 
+            ),
         ),
         spacing="3",
         width=["100%", "auto"],

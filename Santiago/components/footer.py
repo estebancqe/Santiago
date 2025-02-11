@@ -2,8 +2,7 @@ import reflex as rx
 import datetime
 import Santiago.constants as const
 from Santiago.style.style import Size, Spacing
-from Santiago.style.colors import Color, TextColor
-# from Santiago.components.ant_components import float_button
+from Santiago.style.colors import Color
 
 
 def footer() -> rx.Component:

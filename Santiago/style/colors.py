@@ -14,7 +14,7 @@ class Color(Enum):
 
 
 class TextColor(Enum):
-    HEADER = "#F1F2F4"
+    HEADER = "#F1F2F4" #blanco 
     BODY = "#C3C7CB"
     FOOTER = "#A3ABB2"
     NAVBAR="#F5F5F5"

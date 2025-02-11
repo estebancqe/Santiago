@@ -2,7 +2,7 @@ import reflex as rx
 import datetime
 import Santiago.constants as const
 from Santiago.style.style import Size,Spacing
-from Santiago.style.colors import Color, TextColor
+from Santiago.style.colors import Color
 from Santiago.components.link_icon import link_icon
 from Santiago.components.info_text import info_text
 from Santiago.components.link_button import link_button

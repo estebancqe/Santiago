@@ -1,10 +1,8 @@
 import reflex as rx
 import Santiago.constants as const
-from Santiago.style.style import Size,Spacing
+from Santiago.style.style import Spacing
 from Santiago.components.title import title
-from Santiago.components.link_sponsor import link_sponsor
 from Santiago.components.link_button import link_button
-from Santiago.style.colors import TextColor
 
 
 def sponsors() -> rx.Component:
@@ -29,7 +27,6 @@ def sponsors() -> rx.Component:
             justify="center",
         ),
         width="100%",
-        
         align_items="center",
         spacing=Spacing.DEFAULT.value
     )
