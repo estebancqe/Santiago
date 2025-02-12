@@ -65,9 +65,11 @@ def header(details=True) -> rx.Component:
         rx.image(
             src="https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago//tigre_santiago.jpg",
             height=rx.breakpoints(
-            initial="20%",
-            sm="30%",
-        ),
+                    initial="50%",
+                    sm="20%",
+                    ),
+            align="center",
+            justify="center",
         ),
         
         spacing=Spacing.BIG.value,
