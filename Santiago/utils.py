@@ -14,12 +14,12 @@ _meta = [
     {"name": "og:type", "content": "website"},
     {"name": "og:image", "content": preview},
     {"name": "twitter:card", "content": "summary_large_image"},
-    {"name": "twitter:site", "content": "@Creyente"}
+    {"name": "twitter:site", "content": "@Santiago"}
 ]
 
 # Metadatos para la página de inicio
-index_title = "Creyente | Te enseño los mejores modelos de madera y melamina"
-index_description = "Hola, me llamo Creyente y tengo lo mejor de madera y melamina a medida y totalmente personalizado."
+index_title = "Santiago Desing | Creatividad y Diseños"
+index_description = "los mejores diseños y todo con respecto al arte."
 
 index_meta = [
     {"name": "og:title", "content": index_title},
