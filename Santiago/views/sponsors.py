@@ -22,6 +22,7 @@ def sponsors() -> rx.Component:
                 "/icons/location.svg",
                 const.UBI_IBARRA
             ),
+            flex_direction=["column", "row"],
             width="100%",
             align="center",
             justify="center",

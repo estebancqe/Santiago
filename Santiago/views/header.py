@@ -1,6 +1,5 @@
 import reflex as rx
 import datetime
-import Santiago.constants as const
 from Santiago.style.style import Size,Spacing
 from Santiago.style.colors import Color
 from Santiago.components.link_icon import link_icon
@@ -12,23 +11,25 @@ from Santiago.components.link_button import link_button
 def header(details=True) -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.image(
-                src="/CREYENTE.png",
-                width="300px",
-                aling="center",
-            ),
+            # rx.image(
+            #     src="/CREYENTE.png",
+            #     width="300px",
+            #     aling="center",
+            # ),
             rx.vstack(
                 rx.heading(
-                    "CREYENTE",
+                    "Santiago",
                     size=Spacing.VERY_BIG.value,
                     color=Color.CONTENT.value,
                 ),
                 rx.text(
-                    "Diseño de muebles y mas",
+                    "Diseño y mas",
                     margin_top=Size.ZERO.value,
                     color=Color.BLACK.value,
                     size=Spacing.BIG.value,
                 ),
+                justify="center",
+                align="center",
             ),
             # rx.hstack(
             #     link_icon(
@@ -57,13 +58,16 @@ def header(details=True) -> rx.Component:
 
             flex_direction=["column", "row"],
             align="center",
-            justify="between",
+            justify="center",
             spacing=Spacing.VERY_BIG.value,
             width="100%",
         ),
         rx.image(
-            src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/cogador_horizontal.JPG",
-            height="auto"
+            src="https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago//tigre_santiago.jpg",
+            height=rx.breakpoints(
+            initial="20%",
+            sm="30%",
+        ),
         ),
         
         spacing=Spacing.BIG.value,

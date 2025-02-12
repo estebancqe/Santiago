@@ -3,10 +3,10 @@ from enum import Enum
 
 class Color(Enum):
     PRIMARY = "#14A1F0"
-    SECONDARY = "#A3B18A" #verde oliva
+    SECONDARY = "#f08e16" #naranja
     BACKGROUND = "#F5F5F5" #blanco hueso
-    CONTENT = "#D2B48C" # cafe claro
-    SECOND_TITTLE= "#CCB089" # cafe claro ocn mas contraste tendecia mas oscura
+    CONTENT = "#003366" # azul marino
+    SECOND_TITTLE= "#003366" # cafe claro ocn mas contraste tendecia mas oscura
     BLACK="#0C151D"
     PURPLE = "#9146ff"
     PRO = "#FF5500"
