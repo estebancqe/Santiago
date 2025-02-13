@@ -28,33 +28,10 @@ def header(details=True) -> rx.Component:
                     color=Color.BLACK.value,
                     size=Spacing.BIG.value,
                 ),
+                width="100%",
                 justify="center",
                 align="center",
             ),
-            # rx.hstack(
-            #     link_icon(
-            #         "/icons/instagram.svg",
-            #         const.INSTAGRAM,
-            #         "email@email.com"
-            #     ),
-            #     link_icon(
-            #         "/icons/facebook.svg",
-            #         const.FACEBOOK,
-            #         "facebook"
-            #     ),
-            #     link_icon(
-            #         "/icons/book-solid.svg",
-            #         const.CATALOGO,
-            #         "catalogo"
-            #     ),
-            #     link_icon(
-            #         "/icons/whatsapp.svg",
-            #         const.WHATSAPP,
-            #         "whatssap"
-            #     ),
-            #     spacing=Spacing.BIG.value,
-                
-            # ),
 
             flex_direction=["column", "row"],
             align="center",
@@ -62,20 +39,33 @@ def header(details=True) -> rx.Component:
             spacing=Spacing.VERY_BIG.value,
             width="100%",
         ),
-        rx.image(
-            src="https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago//tigre_santiago.jpg",
-            # height=rx.breakpoints(
-            #         initial="50%",
-            #         sm="20%",
-            #         ),
-            height="auto",
+        rx.flex(
+            rx.link(
+                rx.image(
+                    src="https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago//tigre_preview.jpg",
+                    height=rx.breakpoints(
+                        initial="100%",  # móvil
+                        sm="60%",       # tablet
+                        lg="40%"        # desktop
+                        ),
+                        # width="auto",
+                        align="center",
+                        justify="center",
+                ),
+                # width="100%",
+                align="center",
+                justify="center",
+                href="https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago//tigre_santiago.jpg",
+                is_external=True,
+            ),
             width="100%",
             align="center",
             justify="center",
         ),
         
+        
         spacing=Spacing.BIG.value,
-        width=["100%","auto"],
+        width=["100%"],
     ),
     
 def experience() -> int:

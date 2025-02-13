@@ -7,7 +7,7 @@ def lang() -> rx.Component:
     return rx.script("document.documentElement.lang='es'")
 
 # URL de la imagen de vista previa
-preview = "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago//tigre_santiago.jpg"
+preview = "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago//tigre_preview.jpg"
 
 # Metadatos comunes para la web
 _meta = [
