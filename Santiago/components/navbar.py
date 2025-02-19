@@ -8,7 +8,7 @@ from Santiago.components.link_navbar import link_navbar
 def navbar() -> rx.Component:
     return rx.flex(
         # Navegación izquierda
-        rx.flex(
+        rx.hstack(
             rx.hstack(
                 link_navbar(
                     "Inicio",
@@ -51,7 +51,7 @@ def navbar() -> rx.Component:
         ),
         rx.image(
                 src="/Tiago_logo.png",
-                width="150px",
+                width="110px",
                 # aling="center",
             ),
         # Logo/Título centrado
