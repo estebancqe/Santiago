@@ -8,21 +8,21 @@ from Santiago.style.colors import Color
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src="/logocrebla.png",
+            src="/Tiago_logo.png",
             height=Size.VERY_BIG.value,     #alto del logo
             width=Size.VERY_BIG.value,      #ancho del logo
             alt="logotipo de la marca",  #esto es para personas ividentes
         ),
         rx.link(
             rx.box(
-                f"2020-{datetime.date.today().year} ",
+                f"2015-{datetime.date.today().year} ",
                 rx.text(
-                    "Diseño con excelencia",
+                    "Diseño con naturaleza",
                     as_="span",
                     color=Color.BACKGROUND.value,
                     size=Spacing.DEFAULT.value,
                 ),
-                " Santiago Desing.",
+                " TIAGO ART.",
                 padding_top=Size.DEFAULT.value,
                 color=Color.BACKGROUND.value,
                 size=Spacing.DEFAULT.value,

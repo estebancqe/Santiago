@@ -54,18 +54,18 @@ def index_links() -> rx.Component:
             justify="between"
         ),
         
-        title("MODELOS"),
+        title("MURALES"),
         rx.flex(
             rx.text(
-                "CONOCE NUESTROS MODELOS",
+                "Adecumos tu imaginacion al lugar que tu quieras",
                 size=Spacing.SMALL.value,
                 color=Color.BACKGROUND.value,
                 # style=styles.style_secod_tittle,
             ),
             rx.link(
                 rx.image(
-                src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/colgador_de_ropa_mami.jpeg",
-                width="300px",
+                src="https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/imagenes%20de%20obras/tortuga_pintando.jpg",
+                width="400px",
                 href=Route.TRABAJOS.value,
                 ),
                 href=Route.TRABAJOS.value,
@@ -78,25 +78,25 @@ def index_links() -> rx.Component:
             justify="between"
         ),
         
-        title("Crea lo que Siempre has Soñado"),
+        title("EVOLUCION DE LA EXPRESION NATURALISTA"),
 
         rx.flex(
             rx.grid(
                 link_image_muestra(
-                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_cocina_electrodomesticos_copy.JPG",
-                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_cocina_electrodomesticos.JPG",
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/rana_1080.jpg",
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/rana_1080.jpg",
                 ),
                 link_image_muestra(
-                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_armario%20copy.JPG",
-                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_armario.JPG",
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/caballo_mar_entero_1080.jpg",
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/caballo_mar_entero_1080.jpg"
                 ),
                 link_image_muestra(
-                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/cafetera_vertical_cerrado%20copy.JPG",
-                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/cafetera_vertical_cerrado.JPG",
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/dragon_1080.jpg",
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/dragon_1080.jpg"
                 ),
                 link_image_muestra(
-                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/mueble_sala_vertical%20copy.JPG",
-                    "https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/imagenes%20completas%20full%20definicion/mueble_sala_vertical.JPG",
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/vuelvepiedras_1080.jpg",
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/vuelvepiedras_1080.jpg"
                 ),
                 gap="1rem",
                 grid_template_columns=[
