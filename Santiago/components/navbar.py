@@ -16,20 +16,29 @@ def navbar() -> rx.Component:
                     "palabra inicio",
                 ),
                 link_navbar(
-                    "Historia",
+                    "Merchandising",
                     Route.HISTORIA.value,
                     "palabra historia"
                 ),
             ),
             rx.hstack(
                 link_navbar(
-                    "Misión",
+                    "Portafolio",
                     Route.MISION.value,
                     "palabra mision",
                 ),
                     
                 link_navbar(
-                    "Trabajos",
+                    "Tattoos",
+                    Route.TRABAJOS.value,
+                    "palabra trabajos",
+                ),
+                
+            ),
+            rx.hstack(
+                
+                link_navbar(
+                    "Muralismo",
                     Route.TRABAJOS.value,
                     "palabra trabajos",
                 ),
@@ -40,16 +49,21 @@ def navbar() -> rx.Component:
             flex_direction=["column", "row"],
             
         ),
-        # Logo/Título centrado
-        rx.hstack(
-            rx.link(
-                rx.text("Santiago", as_="span", color=TextColor.HEADER.value),
-                rx.text("Desing", as_="span", color=TextColor.HEADER.value),
-                spacing="1",
-                style=styles.navbar_title_style,
-                href=Route.INDEX.value 
+        rx.image(
+                src="/Tiago_logo.png",
+                width="150px",
+                # aling="center",
             ),
-        ),
+        # Logo/Título centrado
+        # rx.hstack(
+        #     rx.link(
+        #         rx.text("Tiago ", as_="span", color=TextColor.HEADER.value),
+        #         rx.text("Art", as_="span", color=TextColor.HEADER.value),
+        #         spacing="1",
+        #         style=styles.navbar_title_style,
+        #         href=Route.INDEX.value 
+        #     ),
+        # ),
         spacing="3",
         width=["100%", "auto"],
         position="sticky", #PARA QUE SE QUEDE ESTATICO 

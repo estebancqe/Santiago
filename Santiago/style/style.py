@@ -45,9 +45,9 @@ class Spacing(Enum):
 
 
 BASE_STYLE = {
-    "font_family": Font.DEFAULT.value,
+    "font_family": Font.DEFAULT.value,  
     "font_weight": FontWeight.LIGHT.value,
-    "background_color": Color.BACKGROUND.value,
+    "background_color": Color.BLACK.value,
     rx.heading: {
         "color": TextColor.HEADER.value,
         "font_family": Font.TITLE.value,
@@ -59,7 +59,7 @@ BASE_STYLE = {
         "padding": Size.SMALL.value,
         "border_radius": Size.DEFAULT.value,
         "color": TextColor.HEADER.value,
-        "background_color": "#D2B48C",#cambio color de fondo del botton
+        "background_color": Color.BLACK.value,#cambio color de fondo del botton
         "white_space": "normal",
         "text_align": "start",
         "--cursor-button": "pointer",
@@ -67,6 +67,7 @@ BASE_STYLE = {
             "background_color": Color.SECONDARY.value
         }
     },
+    
     rx.link: {
         "color": TextColor.BODY.value,
         "text_decoration": "none",
@@ -106,3 +107,17 @@ style_secod_tittle = {
     "text_decoration": "underline",
     "background_color":"#f7f2eb"
 }
+button_nabvar={
+        # "width": "100%",
+        "height": ["100%","auto"],
+        "padding": Size.SMALL.value,
+        "border_radius": Size.DEFAULT.value,
+        "color": TextColor.HEADER.value,
+        "background_color": "#D2B48C",#cambio color de fondo del botton
+        "white_space": "normal",
+        "text_align": "start",
+        "--cursor-button": "pointer",
+        "_hover": {
+            "background_color": Color.SECONDARY.value
+        }
+    },

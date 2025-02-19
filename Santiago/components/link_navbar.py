@@ -4,11 +4,14 @@ from Santiago.style.style import Color
 
 def link_navbar(title:str,url: str, alt: str) -> rx.Component:
     return rx.link(
-        rx.text(
+        rx.button(
+            rx.text(
             title,
             color=Color.BACKGROUND.value,
+            style=styles.navbar_title_style,
         ),
         width=["100%", "auto"],
-        style=styles.navbar_title_style,
         href=url,
+        # style=styles.button_nabvar
+        ),
     )
