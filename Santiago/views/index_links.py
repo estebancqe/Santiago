@@ -58,14 +58,14 @@ def index_links() -> rx.Component:
         rx.flex(
             rx.text(
                 "CONOCE NUESTROS MODELOS",
-                size=Spacing.MEDIUM_BIG.value,
-                color=Color.SECOND_TITTLE.value,
-                style=styles.style_secod_tittle,
+                size=Spacing.SMALL.value,
+                color=Color.BACKGROUND.value,
+                # style=styles.style_secod_tittle,
             ),
             rx.link(
                 rx.image(
                 src="https://sxdosvvnlmtjzebydzyy.supabase.co/storage/v1/object/public/imagenes%20para%20el%20proyecto/fotos%20trabajos%20web/colgador_de_ropa_mami.jpeg",
-                width="100%",
+                width="300px",
                 href=Route.TRABAJOS.value,
                 ),
                 href=Route.TRABAJOS.value,
@@ -73,7 +73,7 @@ def index_links() -> rx.Component:
             ),
             spacing="4",
             width="100%",
-            flex_direction=["column", "column", "row"],
+            flex_direction=["row", "row", "row"],
             align="center",
             justify="between"
         ),
