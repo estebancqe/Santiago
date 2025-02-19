@@ -29,20 +29,13 @@ def navbar() -> rx.Component:
                 ),
                     
                 link_navbar(
-                    "Tattoos",
-                    Route.TRABAJOS.value,
-                    "palabra trabajos",
-                ),
-                
-            ),
-            rx.hstack(
-                
-                link_navbar(
                     "Muralismo",
                     Route.TRABAJOS.value,
                     "palabra trabajos",
                 ),
+                
             ),
+            
             spacing="4",
             color=Color.BACKGROUND.value,
             style=styles.navbar_title_style,
@@ -68,8 +61,8 @@ def navbar() -> rx.Component:
         width=["100%", "auto"],
         position="sticky", #PARA QUE SE QUEDE ESTATICO 
         bg=Color.CONTENT.value,
-        padding_x=Size.BIG.value,
-        padding_y=Size.DEFAULT.value,
+        padding_x=Size.DEFAULT.value,
+        padding_y=Size.SMALL.value,
         z_index="999", #QUE TENGA SIMPRE EL 100 PORCIENTO DE LA PANTALLA
         top="0",
         justify="between",# FOMRACION HOROZONTAL DE LOS COMPONENTES

@@ -45,33 +45,49 @@ class Spacing(Enum):
 
 
 BASE_STYLE = {
-    "font_family": Font.DEFAULT.value,  
+    # Estilos globales
+    "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.LIGHT.value,
-    "background_color": Color.BLACK.value,
+    "background_image": "url('https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago//noche-estrellada.jpeg')",
+    "background_position": "center",
+    "background_size": "cover", 
+    "background_repeat": "no-repeat",
+    "background_attachment": "fixed",
+
+    # Estilos para headings
     rx.heading: {
         "color": TextColor.HEADER.value,
         "font_family": Font.TITLE.value,
-        "font_weight": FontWeight.MEDIUM.value
+        "font_weight": FontWeight.MEDIUM.value,
+        "margin_bottom": "1em",
     },
+
+    # Estilos para botones
     rx.button: {
-        # "width": "100%",
-        "height": ["100%","auto"],
+        "height": ["100%", "auto"],
         "padding": Size.SMALL.value,
         "border_radius": Size.DEFAULT.value,
         "color": TextColor.HEADER.value,
-        "background_color": Color.BLACK.value,#cambio color de fondo del botton
+        "background_color": Color.BLACK.value,
         "white_space": "normal",
         "text_align": "start",
-        "--cursor-button": "pointer",
+        "cursor": "pointer",
+        "transition": "all 0.2s ease-in-out",
         "_hover": {
-            "background_color": Color.SECONDARY.value
+            "background_color": Color.SECONDARY.value,
+            "transform": "translateY(-2px)",
         }
     },
-    
+        
+    # Estilos para links
     rx.link: {
         "color": TextColor.BODY.value,
         "text_decoration": "none",
-        "_hover": {}
+        "transition": "color 0.2s ease-in-out",
+        "_hover": {
+            "color": Color.SECONDARY.value,
+            "text_decoration": "none"
+        }
     }
 }
 

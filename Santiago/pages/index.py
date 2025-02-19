@@ -10,6 +10,18 @@ from Santiago.style.style import Size
 # from Esteban.state.PageState import PageState
 
 
+import reflex as rx
+import Santiago.utils as utils
+import Santiago.style.style as styles
+from Santiago.components.navbar import navbar
+from Santiago.components.footer import footer
+from Santiago.views.header import header
+from Santiago.views.index_links import index_links
+from Santiago.views.sponsors import sponsors
+from Santiago.style.style import Size
+# from Esteban.state.PageState import PageState
+
+
 @rx.page(
     title=utils.index_title,
     description=utils.index_description,
@@ -33,5 +45,5 @@ def index() -> rx.Component:
                 padding=Size.BIG.value
             )
         ),
-        footer()
+        footer(),
     )

@@ -57,7 +57,7 @@ def index_links() -> rx.Component:
         title("MURALES"),
         rx.flex(
             rx.text(
-                "Adecumos tu imaginacion al lugar que tu quieras",
+                "Adecuamos tu local materializando tus más locas ideas",
                 size=Spacing.SMALL.value,
                 color=Color.BACKGROUND.value,
                 # style=styles.style_secod_tittle,
