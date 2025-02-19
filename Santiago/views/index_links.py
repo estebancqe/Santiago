@@ -83,6 +83,10 @@ def index_links() -> rx.Component:
         rx.flex(
             rx.grid(
                 link_image_muestra(
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/dragon_1080.jpg",
+                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/dragon_1080.jpg"
+                ),
+                link_image_muestra(
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/rana_1080.jpg",
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/rana_1080.jpg",
                 ),
@@ -90,10 +94,7 @@ def index_links() -> rx.Component:
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/caballo_mar_entero_1080.jpg",
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/caballo_mar_entero_1080.jpg"
                 ),
-                link_image_muestra(
-                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/dragon_1080.jpg",
-                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/dragon_1080.jpg"
-                ),
+                
                 link_image_muestra(
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/vuelvepiedras_1080.jpg",
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/vuelvepiedras_1080.jpg"

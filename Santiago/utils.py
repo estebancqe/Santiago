@@ -18,8 +18,8 @@ _meta = [
 ]
 
 # Metadatos para la página de inicio
-index_title = "Santiago Desing | Creatividad y Diseños"
-index_description = "los mejores diseños y todo con respecto al arte."
+index_title = "TIAGO ART | ILUSTRACION Y MURALISMO"
+index_description = "biologo marino especialisado en ilustracion"
 
 index_meta = [
     {"name": "og:title", "content": index_title},

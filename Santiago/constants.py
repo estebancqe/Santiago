@@ -6,14 +6,8 @@ G_TAG = "G-3YGHT3XJFS"
 #cabecera
 
 #comtacto
-EMAIL=""
-WHATSAPP=""
-CATALOGO=""
-
-#Sponsors
-CARPINTERIA=""
-GRAF_PYT="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
-LOGO_CREYENTE=""
+EMAIL="jonasqe22@gmail.com"
+WHATSAPP="https://wa.me/+593992635914"
 
 #contactos
 INSTAGRAM="https://www.instagram.com/tiago.art.official?igsh=MTVyNnM0enJzdHJ5Ng=="

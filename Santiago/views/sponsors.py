@@ -18,7 +18,7 @@ def sponsors() -> rx.Component:
             ),
                 link_button(
                 "Guayaquil",
-                "la direccion que quieras poner",
+                "Sauces Dos",
                 "/icons/location.svg",
                 const.UBI_IBARRA
             ),
