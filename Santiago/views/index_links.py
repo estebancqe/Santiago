@@ -64,7 +64,7 @@ def index_links() -> rx.Component:
             ),
             rx.link(
                 rx.image(
-                src="https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/imagenes%20de%20obras/tortuga_pintando.jpg",
+                src="/tortuga_pintando.jpg",
                 width="400px",
                 href=Route.TRABAJOS.value,
                 ),
@@ -83,20 +83,20 @@ def index_links() -> rx.Component:
         rx.flex(
             rx.grid(
                 link_image_muestra(
-                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/dragon_1080.jpg",
+                    "/santiago_audiovisual/dragon_1080.jpg", 
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/dragon_1080.jpg"
                 ),
                 link_image_muestra(
-                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/rana_1080.jpg",
+                    "/santiago_audiovisual/rana_1080.jpg",
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/rana_1080.jpg",
                 ),
                 link_image_muestra(
-                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/caballo_mar_entero_1080.jpg",
+                    "/santiago_audiovisual/caballo_mar_entero_1080.jpg",
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/caballo_mar_entero_1080.jpg"
                 ),
                 
                 link_image_muestra(
-                    "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/vuelvepiedras_1080.jpg",
+                    "santiago_audiovisual/vuelvepiedras_1080.jpg",
                     "https://teuwziagxrmfiqifcitt.supabase.co/storage/v1/object/public/imagenes%20Santiago/obras%20altura%201080/vuelvepiedras_1080.jpg"
                 ),
                 gap="1rem",
